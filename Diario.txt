@@ -1,0 +1,19 @@
+20171010
+repaso operciones git
+configuracion inicial:
+git config --global user.name voroferrer
+git config --global user.email 1dam.vferrer@institutoserpis.org
+git config --global push.default simple
+
+clonado:
+git clone https://github.com/voroferrer/ed.git 
+
+nueva versión:
+git add diario.txt (Marca el fichero.txt)
+git commit -m "Resumen de la nueva versión"(incluye los archivos marcados en el git local)
+
+
+publicacion en remoto:
+git push 
+
+
