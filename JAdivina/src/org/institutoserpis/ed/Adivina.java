@@ -6,31 +6,23 @@ import java.util.Scanner;
 public class Adivina {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner (System.in);
-		Random rand = new Random ();
-		int numero = rand.nextInt(1000);				
+		Scanner scanner = new Scanner(System.in);
+		Random rand = new Random();
+		int numero = rand.nextInt(1000) + 1;
 		System.out.println("Adivina el numero entre 1 y 1000 :");
-		String leer= scanner.nextLine();
-		String nuevo;
-		int introducido = Integer.parseInt(leer);
-		int correcto = 0;
-		while (correcto != 1) {
-			if (numero != introducido) {
-				if (numero > introducido) {
-					System.out.println("Incorrecto, el numero introducido es menor que el generado, prueba otra vez :");
-					nuevo= scanner.nextLine();
-					introducido = Integer.parseInt(nuevo); 
-				}
-				else {
-					System.out.println("Incorrecto, el numero introducido es mayor que el generado, prueba otra vez :");
-					nuevo= scanner.nextLine();
-					introducido = Integer.parseInt(nuevo);
-				} 					
-			}
-			else {
-			System.out.println("Correcto");
-			correcto = 1;
-			}
+		int introducido = scanner.nextInt();
+		int intentos = 0;
+		while (numero != introducido) {
+			if (numero > introducido)
+				System.out.println("Incorrecto, el numero introducido es menor que el generado, prueba otra vez :");
+			else
+				System.out.println("Incorrecto, el numero introducido es mayor que el generado, prueba otra vez :");
+			introducido = scanner.nextInt();
+			intentos++;
+
 		}
+		System.out.println("Correcto");
+		System.out.println("Te ha costado : " + intentos + " intentos");
 	}
+
 }
