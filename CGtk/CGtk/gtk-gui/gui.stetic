@@ -22,7 +22,7 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Label" id="label1">
+              <widget class="Gtk.Label" id="labelNombre">
                 <property name="MemberName" />
                 <property name="LabelProp" translatable="yes">Nombre</property>
               </widget>
@@ -34,7 +34,7 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Entry" id="entry1">
+              <widget class="Gtk.Entry" id="entryNombre">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
@@ -69,7 +69,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Label" id="label2">
+          <widget class="Gtk.Label" id="labelHola">
             <property name="MemberName" />
             <property name="LabelProp" translatable="yes">Hola</property>
           </widget>

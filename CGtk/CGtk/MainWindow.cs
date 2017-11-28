@@ -7,7 +7,7 @@ public partial class MainWindow: Gtk.Window
 	{
 		Build ();
 		buttonAceptar.Clicked += delegate {
-			label2.Text = "Hola " + entry1.Text;	
+			labelHola.Text = "Hola " + entryNombre.Text;	
 		};
 
 	}
