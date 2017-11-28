@@ -1,0 +1,6 @@
+/home/vorper/ed/CGtk/CGtk/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vorper/ed/CGtk/CGtk/obj/x86/Debug/CGtk.gtk-gui.gui.stetic
+/home/vorper/ed/CGtk/CGtk/bin/Debug/CGtk.exe.mdb
+/home/vorper/ed/CGtk/CGtk/bin/Debug/CGtk.exe
+/home/vorper/ed/CGtk/CGtk/obj/x86/Debug/CGtk.exe
+/home/vorper/ed/CGtk/CGtk/obj/x86/Debug/CGtk.exe.mdb

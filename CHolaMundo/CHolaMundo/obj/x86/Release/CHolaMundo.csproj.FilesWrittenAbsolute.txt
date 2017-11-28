@@ -1,0 +1,5 @@
+/home/vorper/ed/CHolaMundo/CHolaMundo/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vorper/ed/CHolaMundo/CHolaMundo/bin/Release/CHolaMundo.exe.mdb
+/home/vorper/ed/CHolaMundo/CHolaMundo/bin/Release/CHolaMundo.exe
+/home/vorper/ed/CHolaMundo/CHolaMundo/obj/x86/Release/CHolaMundo.exe
+/home/vorper/ed/CHolaMundo/CHolaMundo/obj/x86/Release/CHolaMundo.exe.mdb
