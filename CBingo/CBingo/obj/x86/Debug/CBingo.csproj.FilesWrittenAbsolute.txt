@@ -1,0 +1,6 @@
+/home/vorper/ed/CBingo/CBingo/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vorper/ed/CBingo/CBingo/obj/x86/Debug/CBingo.gtk-gui.gui.stetic
+/home/vorper/ed/CBingo/CBingo/bin/Debug/CBingo.exe.mdb
+/home/vorper/ed/CBingo/CBingo/bin/Debug/CBingo.exe
+/home/vorper/ed/CBingo/CBingo/obj/x86/Debug/CBingo.exe
+/home/vorper/ed/CBingo/CBingo/obj/x86/Debug/CBingo.exe.mdb
