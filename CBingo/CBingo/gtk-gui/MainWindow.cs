@@ -4,6 +4,12 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vBoxMain;
+	
+	private global::Gtk.HBox hbox1;
+	
+	private global::Gtk.Button buttonAdelante;
+	
+	private global::Gtk.Alignment alignment1;
 
 	protected virtual void Build ()
 	{
@@ -16,6 +22,32 @@ public partial class MainWindow
 		this.vBoxMain = new global::Gtk.VBox ();
 		this.vBoxMain.Name = "vBoxMain";
 		this.vBoxMain.Spacing = 6;
+		// Container child vBoxMain.Gtk.Box+BoxChild
+		this.hbox1 = new global::Gtk.HBox ();
+		this.hbox1.Name = "hbox1";
+		this.hbox1.Spacing = 6;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.buttonAdelante = new global::Gtk.Button ();
+		this.buttonAdelante.CanFocus = true;
+		this.buttonAdelante.Name = "buttonAdelante";
+		this.buttonAdelante.UseUnderline = true;
+		this.buttonAdelante.Label = global::Mono.Unix.Catalog.GetString ("Adelante");
+		this.hbox1.Add (this.buttonAdelante);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonAdelante]));
+		w1.Position = 2;
+		w1.Expand = false;
+		w1.Fill = false;
+		this.vBoxMain.Add (this.hbox1);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vBoxMain [this.hbox1]));
+		w2.Position = 0;
+		w2.Expand = false;
+		w2.Fill = false;
+		// Container child vBoxMain.Gtk.Box+BoxChild
+		this.alignment1 = new global::Gtk.Alignment (0.5F, 0.5F, 1F, 1F);
+		this.alignment1.Name = "alignment1";
+		this.vBoxMain.Add (this.alignment1);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vBoxMain [this.alignment1]));
+		w3.Position = 1;
 		this.Add (this.vBoxMain);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
