@@ -1,13 +1,17 @@
 ﻿<Properties StartupItem="CBingo/CBingo.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/Panel.cs">
     <Files>
-      <File FileName="CBingo/Program.cs" Line="17" Column="1" />
-      <File FileName="CBingo/MainWindow.cs" Line="22" Column="5" />
+      <File FileName="CBingo/Program.cs" Line="14" Column="4" />
+      <File FileName="CBingo/Bombo.cs" Line="23" Column="26" />
+      <File FileName="CBingo/BomboTest.cs" Line="28" Column="38" />
+      <File FileName="CBingo/Panel.cs" Line="32" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/vorper/ed/NUnitTestClass.vb" line="6" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

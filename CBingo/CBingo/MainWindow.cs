@@ -15,7 +15,7 @@ public partial class MainWindow: Gtk.Window
 		uint columns = 10;
 		List<Button> buttons = new List<Button>();
 		Table table = new Table (rows, columns, true);
-/*		for (uint y = 0; y < rows; y++) {
+/*		for (uint y = 0; y < rows; y++) {						
 			for (uint x = 0; x < columns; x++) {
 				Button button = new Button ();
 				button.Label = ((y * 10) + (x+1)).ToString();
@@ -48,8 +48,7 @@ public partial class MainWindow: Gtk.Window
 		table.Visible = true;
 		vBoxMain.Add (table);
 		Random rand = new Random ();
-		buttonAdelante.Clicked += delegate {
-			
+		buttonAdelante.Clicked += delegate {			
 			int index = rand.Next(bolas.Count);
 			int bola = bolas[index];
 			bolas.Remove(bola);
