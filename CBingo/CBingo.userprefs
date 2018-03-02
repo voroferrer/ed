@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="CBingo/CBingo.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/Panel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/Program.cs">
     <Files>
       <File FileName="CBingo/Program.cs" Line="14" Column="4" />
       <File FileName="CBingo/Bombo.cs" Line="23" Column="26" />
       <File FileName="CBingo/BomboTest.cs" Line="28" Column="38" />
-      <File FileName="CBingo/Panel.cs" Line="32" Column="2" />
+      <File FileName="CBingo/Panel.cs" Line="20" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
