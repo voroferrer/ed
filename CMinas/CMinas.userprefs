@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="CMinas/CMinas.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CMinas/MainWindow.cs">
+    <Files>
+      <File FileName="CMinas/MainWindow.cs" Line="122" Column="14" />
+      <File FileName="../CBingo/CBingo/MainWindow.cs" Line="14" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,12 @@
+/home/vorper/ed/CMinas/CMinas/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vorper/ed/CMinas/CMinas/obj/x86/Debug/CMinas.gtk-gui.gui.stetic
+/home/vorper/ed/CMinas/CMinas/bin/Debug/CMinas.exe.mdb
+/home/vorper/ed/CMinas/CMinas/bin/Debug/CMinas.exe
+/home/vorper/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe
+/home/vorper/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+/home/voro/CMinas/CMinas/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.gtk-gui.gui.stetic
+/home/voro/CMinas/CMinas/bin/Debug/CMinas.exe.mdb
+/home/voro/CMinas/CMinas/bin/Debug/CMinas.exe
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
