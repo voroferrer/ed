@@ -10,3 +10,9 @@
 /home/voro/CMinas/CMinas/bin/Debug/CMinas.exe
 /home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe
 /home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.gtk-gui.gui.stetic
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/bin/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/bin/Debug/CMinas.exe

@@ -1,52 +1,57 @@
 ﻿using System;
 using Gtk;
+using System.Collections.Generic;
 
 public partial class MainWindow: Gtk.Window
 {
-	public static event ButtonPressEventArgs boton;
+	private uint rows;
+	private uint columns;
+	private List<Button> buttons = new List<Button>();
+	private List<Button> bombas = new List<Button>();
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Random rand = new Random ();
-		uint rows ;
-		uint columns ;
 		uint bombs;
 		uint noBombs;
 		double random;
 		Build ();
-
 		button10.Clicked += delegate {			
 			rows = 10;
 			columns = 10;
-			bombs = 20;
+			bombs = 40;
 			noBombs = 80;
 			Table table10 = new Table (rows, columns, true);
 			for (uint y = 0; y < rows; y++) {						
 				for (uint x = 0; x < columns; x++) {
 					random = rand.NextDouble();
 					Button button = new Button (" ");
+					buttons.Add(button);
 					if(bombs>0 && noBombs>0){
 						if(random > 0.65){
-							button.Label = "Bomb";
+							bombas.Add(button);
 							bombs-=1;
 						}else{
-							button.Label = "NoBomb";
+							
 							noBombs-=1;
 						}
 					}else if(bombs >0 && noBombs==0){
-						button.Label = "Bomb";
+						bombas.Add(button);
 						bombs-=1;
 					}else if (bombs == 0 && noBombs>0){
-						button.Label = "NoBomb";
+						
 						noBombs-=1;
 					}
 					button.Visible = true;
+					button.Clicked += delegate {
+						vecinos(button);
+					};
 					table10.Attach (button , x , (x + 1) , y , (y + 1));
 				}
 			}
-			Hide();
+			Hiden();
 			table10.Visible = true;
 			vbox3.Add (table10);
-			LetsPlay(20);
+		
 
 		};
 
@@ -60,29 +65,34 @@ public partial class MainWindow: Gtk.Window
 				for (uint x = 0; x < columns; x++) {
 					random = rand.NextDouble();
 					Button button = new Button (" ");
+					buttons.Add(button);
 					if(bombs>0 && noBombs>0){
 						if(random > 0.8){
-							button.Name = "Bomb";
+							bombas.Add(button);
 							bombs-=1;
+
 						}else{
 							button.Name = "NoBomb";
 							noBombs-=1;
 						}
 					}else if(bombs >0 && noBombs==0){
-						button.Name = "Bomb";
+						bombas.Add(button);
 						bombs -=1;
 					}else if (bombs == 0 && noBombs>0){
 						button.Name = "NoBomb";
 						noBombs -=1;
 					}
 					button.Visible = true;
+					button.Clicked += delegate {
+						vecinos(button);
+					};
 					table20.Attach (button , x , (x + 1) , y , (y + 1));
 				}
 			}
-			Hide();
+			Hiden();
 			table20.Visible = true;
 			vbox3.Add (table20);
-			LetsPlay(50);
+
 		};
 
 
@@ -97,30 +107,34 @@ public partial class MainWindow: Gtk.Window
 				for (uint x = 0; x < columns; x++) {
 					random = rand.NextDouble();
 					Button button = new Button (" ");
+					buttons.Add(button);
 					if(bombs>0 && noBombs>0){
 						
 						if(random > 0.8){
-							button.Name = "Bomb";
+							bombas.Add(button);
 							bombs--;
 						}else{
 							button.Name = "NoBomb";
 							noBombs--;
 						}
 					}else if(bombs >0 && noBombs==0){
-						button.Name = "Bomb";
+						bombas.Add(button);
 						bombs--;
 					}else if (bombs == 0 && noBombs>0){
 						button.Name = "NoBomb";
 						noBombs--;
 					}
 					button.Visible = true;
+					button.Clicked += delegate {
+						vecinos(button);
+					};
 					table50.Attach (button , x , (x + 1) , y , (y + 1));
 				}
 			}
-			Hide();
+			Hiden();
 			table50.Visible = true;
 			vbox3.Add (table50);
-			LetsPlay(300);
+
 		};
 
 
@@ -132,25 +146,41 @@ public partial class MainWindow: Gtk.Window
 		Application.Quit ();
 		a.RetVal = true;
 	}
-	public void Hide() {
+	public void Hiden() {
 		button10.Visible = false;
 		button20.Visible = false;
 		button50.Visible = false;
-		button1.Visible = false;
-	}
-	protected void LetsPlay(int n){
-		Label score = new Label();
-		score.Text= "Hay "+ n +" bombas";
-		score.Visible = true;
-		vbox1.Add (score);
 
 	}
-	public void addEventListener(
-		string type,
-		AckCallback listener,
-		AckCallback callback = null,
-		AckCallback errorCallback = null
-	){
+	private void vecinos(Button button) {
+		uint index = (uint)buttons.IndexOf (button);//valor a obtener del button
+		if (bombas.Contains (button)) {
+			Label label = new Label ();
+			label.Text = "GAME OVER";
+			label.Visible = true;
+			for (int i = 0; i < buttons.Count; i++) {
+				buttons[i].Visible = false;
+			}
+			vbox3.Add (label);
+		} else {
+			int bombasVecinos = 0;
+			uint row = index / rows;
+			uint column = index % columns;
+			uint topRow = row == 0 ? 0 : row - 1;
+			uint bottomRow = row == rows - 1 ? rows - 1 : row + 1;
+			uint leftColumn = column == 0 ? 0 : column - 1;
+			uint rightColumn = column == columns - 1 ? columns - 1 : column + 1;
+			for (uint indexRow = topRow; indexRow <= bottomRow; indexRow++)
+				for (uint indexColumn = leftColumn; indexColumn <= rightColumn; indexColumn++) {
+					uint indexButton = indexRow * columns + indexColumn;
+					Button buttonVecino = buttons [(int)indexButton];
+					if (bombas.Contains (buttonVecino)) {
+						bombasVecinos++;
+					}
+					button.Label = "" + bombasVecinos;
+				}
+			
+		}
 	}
 
 }
