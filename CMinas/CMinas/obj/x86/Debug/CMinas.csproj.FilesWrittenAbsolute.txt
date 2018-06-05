@@ -4,3 +4,18 @@
 /home/vorper/ed/CMinas/CMinas/bin/Debug/CMinas.exe
 /home/vorper/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe
 /home/vorper/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+<<<<<<< HEAD
+=======
+/home/voro/CMinas/CMinas/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.gtk-gui.gui.stetic
+/home/voro/CMinas/CMinas/bin/Debug/CMinas.exe.mdb
+/home/voro/CMinas/CMinas/bin/Debug/CMinas.exe
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe
+/home/voro/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.gtk-gui.gui.stetic
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe
+/home/voro/ed/CMinas/CMinas/obj/x86/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/bin/Debug/CMinas.exe.mdb
+/home/voro/ed/CMinas/CMinas/bin/Debug/CMinas.exe
+>>>>>>> 94d06f55f3f632d0ffcd2faf2d98a55033ad9b34

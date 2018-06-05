@@ -12,8 +12,11 @@ public partial class MainWindow
 	private global::Gtk.VBox vbox1;
 	
 	private global::Gtk.Button button50;
+<<<<<<< HEAD
 	
 	private global::Gtk.Button button1;
+=======
+>>>>>>> 94d06f55f3f632d0ffcd2faf2d98a55033ad9b34
 
 	protected virtual void Build ()
 	{
@@ -62,6 +65,7 @@ public partial class MainWindow
 		w3.Position = 0;
 		w3.Expand = false;
 		w3.Fill = false;
+<<<<<<< HEAD
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.button1 = new global::Gtk.Button ();
 		this.button1.CanFocus = true;
@@ -78,12 +82,23 @@ public partial class MainWindow
 		w5.Position = 2;
 		w5.Expand = false;
 		w5.Fill = false;
+=======
+		this.vbox3.Add (this.vbox1);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.vbox1]));
+		w4.Position = 2;
+		w4.Expand = false;
+		w4.Fill = false;
+>>>>>>> 94d06f55f3f632d0ffcd2faf2d98a55033ad9b34
 		this.Add (this.vbox3);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
 		this.DefaultWidth = 341;
+<<<<<<< HEAD
 		this.DefaultHeight = 134;
+=======
+		this.DefaultHeight = 99;
+>>>>>>> 94d06f55f3f632d0ffcd2faf2d98a55033ad9b34
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 	}

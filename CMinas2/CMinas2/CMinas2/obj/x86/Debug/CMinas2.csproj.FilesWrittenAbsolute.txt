@@ -1,0 +1,6 @@
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/obj/x86/Debug/CMinas2.gtk-gui.gui.stetic
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/bin/Debug/CMinas2.exe.mdb
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/bin/Debug/CMinas2.exe
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/obj/x86/Debug/CMinas2.exe
+/home/vorper/ed/CMinas2/CMinas2/CMinas2/obj/x86/Debug/CMinas2.exe.mdb
