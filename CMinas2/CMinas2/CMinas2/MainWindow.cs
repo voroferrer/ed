@@ -19,8 +19,8 @@ public partial class MainWindow: Gtk.Window
 		button10.Clicked += delegate {			
 			rows = 10;
 			columns = 10;
-			bombs = 1;
-			noBombs = 99;
+			bombs = 10;
+			noBombs = 90;
 			restantes = noBombs;
 			Table table10 = new Table (rows, columns, true);
 			for (uint y = 0; y < rows; y++) {						
