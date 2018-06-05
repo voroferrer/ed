@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="CVector/VectorTest.cs">
     <Files>
       <File FileName="CVector/Program.cs" Line="1" Column="1" />
-      <File FileName="CVector/Vector.cs" Line="24" Column="43" />
-      <File FileName="CVector/VectorTest.cs" Line="20" Column="34" />
+      <File FileName="CVector/Vector.cs" Line="21" Column="20" />
+      <File FileName="CVector/VectorTest.cs" Line="38" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

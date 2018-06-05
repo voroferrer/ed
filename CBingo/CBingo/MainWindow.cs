@@ -21,8 +21,6 @@ public partial class MainWindow: Gtk.Window
 				button.Label = ((y * 10) + (x+1)).ToString();
 				button.Visible = true;
 				table.Attach (button , x , (x + 1) , y , (y + 1));
-
-
 			}
 		}
 		*/

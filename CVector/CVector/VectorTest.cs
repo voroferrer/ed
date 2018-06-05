@@ -11,15 +11,34 @@ namespace CVector
 			int[] v = {12,9,15,7,13};
 			Vector.Sort (v);
 			CollectionAssert.AreEqual (new int[]{ 7, 9, 12, 13, 15 }, v);
+			v = new int[]{ 7, 9, 12, 13, 15 };
+			Vector.Sort (v);
+			CollectionAssert.AreEqual (new int[]{ 7, 9, 12, 13, 15 }, v);
 
-		}
+		} 
 		[Test]
 		public void IndexMin(){
-			int[] v = { 12, 9, 15, 7, 13 };
+			int[] v = { 12, 7, 15, 9, 13 };
 			int indexMin = Vector.IndexMin (v, 4);
 			Assert.AreEqual (4, indexMin);
+			Assert.AreEqual (2, indexMin);
+			Assert.AreEqual (1, Vector.IndexMin(v,0));
 		
 		
+		}
+		[Test]
+		[ExpectedException(typeof(System.IndexOutOfRangeException))]
+		public void IndexMinBadInitialIndexRight(){
+			int[] v = { 12, 7, 15, 9, 13 };
+			Assert.AreEqual (0, Vector.IndexMin (v, -1));
+		
+		}
+		[Test]
+		[ExpectedException(typeof(System.IndexOutOfRangeException))]
+		public void IndexMinBadInitialIndexLeft(){
+			int[] v = { 12, 7, 15, 9, 13 };
+			Assert.AreEqual (0, Vector.IndexMin (v, -1));
+
 		}
 	}
 }

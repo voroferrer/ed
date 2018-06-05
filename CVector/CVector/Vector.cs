@@ -14,6 +14,11 @@ namespace CVector
 		/// <param name="v">V.</param>
 		/// <param name="initialIndex">Initial index.</param>
 		public static int IndexMin(int[] v, int initialIndex){
+			int indexMin = initialIndex;
+			for (int index = initialIndex; index < v.Length; index++)
+				if (v [index] < v [initialIndex])
+					indexMin = index;
+			return indexMin;
 
 		}
 		/// <summary>
